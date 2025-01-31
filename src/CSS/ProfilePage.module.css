@@ -1,0 +1,103 @@
+/* Profile Page container */
+.profilePageContainer {
+    background: rgba(244, 247, 252, 0.7); /* Reduced opacity */
+    font-family: 'Arial', sans-serif;
+    color: #6a0dad; /* Purple text */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title */
+  h2 {
+    color: #ff69b4; /* Pink */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 50px;
+  }
+  
+  /* Profile information */
+  .profileInfo p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Buttons container */
+  .buttonsContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  /* Button styles */
+  button {
+    background: linear-gradient(45deg, #6a0dad, #ff69b4);
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  button:hover {
+    background: linear-gradient(45deg, #7b1fa2, #ff85c0);
+    transform: scale(1.05);
+  }
+  
+  /* Disabled buttons */
+  button:disabled {
+    background: rgba(106, 13, 173, 0.5);
+    cursor: not-allowed;
+  }
+  
+  /* Edit Profile form styles */
+  .editProfileForm {
+    background: rgba(255, 255, 255, 0.8); /* Soft white with opacity */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form inputs */
+  .editProfileForm input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #6a0dad;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  /* Success, delete, and error messages */
+  .successMessage, .deleteMessage, .error {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .successMessage {
+    color: #28a745;
+  }
+  
+  .deleteMessage {
+    color: #ff4444;
+  }
+  
+  .error {
+    color: red;
+  }
+.div{
+    padding-top: 120px;
+}  

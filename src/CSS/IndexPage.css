@@ -1,0 +1,123 @@
+/* Basic layout for the index page */
+.indexPage {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+    /* background: linear-gradient(135deg, #8e44ad, #e91e63);  Gradient background for page */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+   .welcome{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Blog list container */
+  .blog-list {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .blog-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .blog-card h2 {
+    font-size: 1.5rem;
+    color: #8e44ad;
+    margin-bottom: 10px;
+  }
+  
+  .blog-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  /* Subscribe button styles */
+  .subscribe, .unsubscribe {
+    background-color: #8e44ad;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .subscribe:hover, .unsubscribe:hover {
+    background-color: #e91e63;
+  }
+  
+  /* Comment section styles */
+  .comment-section {
+    margin-top: 15px;
+  }
+  
+  .comment-section input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+  }
+  
+  .comment-section button {
+    padding: 10px;
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .comment-section button:hover {
+    background-color: #e91e63;
+  }
+  
+  /* Comments list styles */
+  .comments-list {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .comments-list p {
+    margin: 5px 0;
+  }
+  
+  .comments-list strong {
+    color: #8e44ad;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  

@@ -1,0 +1,164 @@
+/* General Body styling */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('../CSS/LoginImg.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .div{
+    padding-top: 60px;
+  }
+  /* Registration Form Styling */
+  .register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-top: 100px; /* Adjust based on your layout */
+    animation: fadeIn 1s ease-out;
+  }
+  
+  /* Fade-in animation for form */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Title Styling */
+  .register h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #8f07fe;
+    margin-bottom: 20px;
+    text-align: center;
+    animation: slideInLeft 1s ease-out;
+  }
+  
+  /* Slide-in animation for title */
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Label Styling */
+  .register label {
+    font-size: 1.2rem;
+    color: #495057;
+    margin-bottom: 5px;
+  }
+  
+  /* Input Fields */
+  .register input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #8f07fe;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #495057;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  /* Input field animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .register input:focus {
+    outline: none;
+    border-color: #8f07fe;
+    box-shadow: 0 0 8px rgba(143, 0, 179, 0.5);
+  }
+  
+  /* Button Styling */
+  .register button {
+    width: 100%;
+    padding: 12px;
+    margin: 20px 0;
+    background-color: #8f07fe;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: buttonAnimation 1s ease-out;
+  }
+  
+  /* Button Hover Effect */
+  .register button:hover {
+    background-color: #882121;
+    transform: scale(1.05);
+  }
+  
+  /* Button Animation */
+  @keyframes buttonAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Message Styling */
+  .message {
+    font-size: 1rem;
+    color: #28a745;
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .register {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .register h1 {
+      font-size: 2rem;
+    }
+  
+    .register input {
+      font-size: 0.9rem;
+    }
+  
+    .register button {
+      font-size: 1rem;
+    }
+  }
+  

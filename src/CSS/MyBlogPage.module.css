@@ -1,0 +1,114 @@
+/* Container */
+.blogsContainer {
+  background: rgba(244, 247, 252, 0.8); /* Soft background with opacity */
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+ 
+}
+.maindiv{
+  padding-top: 100px;
+}
+/* Title */
+.heading {
+  text-align: center;
+  color: #6a0dad; /* Deep purple */
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Blog List */
+.blogList {
+  list-style: none;
+  padding: 0;
+}
+
+.blogItem {
+  background: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 12px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Blog Title */
+.blogItem h2 {
+  color: #ff69b4; /* Pink */
+  margin-bottom: 8px;
+}
+
+/* Blog Information */
+.blogItem p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Theme Style */
+.themeText {
+  font-weight: bold;
+  color: #6a0dad;
+}
+
+/* Buttons */
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+button {
+  background: linear-gradient(45deg, #6a0dad, #ff69b4);
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: linear-gradient(45deg, #7b1fa2, #ff85c0);
+  transform: scale(1.05);
+}
+
+/* Input Fields */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #6a0dad;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Edit Mode */
+.editContainer {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+.cancelButton {
+  background: #ff4444 !important;
+}
+
+.cancelButton:hover {
+  background: #ff6b6b !important;
+}
+
+/* Empty Message */
+.emptyMessage {
+  text-align: center;
+  font-size: 16px;
+  color: #6a0dad;
+  font-weight: bold;
+}
