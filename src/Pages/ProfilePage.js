@@ -341,7 +341,7 @@ const ProfilePage = () => {
       }
       try {
         const response = await axios.get(
-          `http://localhost:4000/profile?username=${userInfo.username}`
+          `https://blogbackend-lqcb.onrender.com/profile?username=${userInfo.username}`
         );
         setProfile(response.data);
       } catch (err) {
@@ -359,7 +359,7 @@ const ProfilePage = () => {
       return;
     }
     try {
-      const response = await axios.post("http://localhost:4000/edit-profile", {
+      const response = await axios.post("https://blogbackend-lqcb.onrender.com/edit-profile", {
         currentUsername: userInfo.username,
         newUsername: newUsername || userInfo.username,
         newPassword,
@@ -379,7 +379,7 @@ const ProfilePage = () => {
 
   const handleDeleteProfile = async () => {
     try {
-      const response = await axios.post("http://localhost:4000/delete-profile", {
+      const response = await axios.post("https://blogbackend-lqcb.onrender.com/delete-profile", {
         username: userInfo.username,
       });
       setDeleteMessage(response.data.message);

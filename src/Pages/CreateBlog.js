@@ -272,7 +272,7 @@ export default function CreateBlog() {
     const blogData = { blogName, author, theme, information, url };
 
     try {
-      const response = await fetch("http://localhost:4000/create-blog", {
+      const response = await fetch("https://blogbackend-lqcb.onrender.com/create-blog", {
         method: "POST",
         body: JSON.stringify(blogData),
         headers: { "Content-Type": "application/json" },

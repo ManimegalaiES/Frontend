@@ -200,7 +200,7 @@ export default function MyBlogPage() {
 
   async function fetchBlogs(username) {
     try {
-      const response = await fetch(`http://localhost:4000/my-blogs?username=${username}`);
+      const response = await fetch(`https://blogbackend-lqcb.onrender.com/my-blogs?username=${username}`);
       if (response.ok) {
         const userBlogs = await response.json();
         setBlogs(userBlogs);
@@ -214,7 +214,7 @@ export default function MyBlogPage() {
 
   async function handleDelete(id) {
     try {
-      const response = await fetch(`http://localhost:4000/delete-blog/${id}`, { method: "DELETE" });
+      const response = await fetch(`https://blogbackend-lqcb.onrender.com/delete-blog/${id}`, { method: "DELETE" });
       if (response.ok) {
         setBlogs(blogs.filter(blog => blog._id !== id));
       } else {
@@ -232,7 +232,7 @@ export default function MyBlogPage() {
 
   async function handleUpdate() {
     try {
-      const response = await fetch(`http://localhost:4000/update-blog/${editingBlog}`, {
+      const response = await fetch(`https://blogbackend-lqcb.onrender.com/update-blog/${editingBlog}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(updatedBlog),

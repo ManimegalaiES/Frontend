@@ -654,7 +654,7 @@ const IndexPage = () => {
   const [commentInputs, setCommentInputs] = useState({});
 
   useEffect(() => {
-    fetch("http://localhost:4000/all-blogs")
+    fetch("https://blogbackend-lqcb.onrender.com/all-blogs")
       .then((response) => response.json())
       .then((data) => setBlogs(data))
       .catch((error) => console.error("Error fetching blogs:", error));
@@ -662,7 +662,7 @@ const IndexPage = () => {
 
   const toggleSubscribe = async (author) => {
     try {
-      const response = await fetch("http://localhost:4000/toggle-subscribe", {
+      const response = await fetch("https://blogbackend-lqcb.onrender.com/toggle-subscribe", {
         method: "POST",
         body: JSON.stringify({ author, username: userInfo?.username }),
         headers: { "Content-Type": "application/json" },
@@ -685,7 +685,7 @@ const IndexPage = () => {
     if (!commentInputs[blogId]?.trim()) return;
 
     try {
-      const response = await fetch("http://localhost:4000/add-comment", {
+      const response = await fetch("https://blogbackend-lqcb.onrender.com/add-comment", {
         method: "POST",
         body: JSON.stringify({
           blogId,
